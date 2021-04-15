@@ -58,6 +58,7 @@ func readJSON(fileName string, i float64) []Weight {
 
 }
 func readweight() float64 {
+	fmt.Println("Welcome! Please enter your current weight:")
 	stdin := bufio.NewReader(os.Stdin)
 	var i float64
 	_, err := fmt.Fscanln(stdin, &i)
